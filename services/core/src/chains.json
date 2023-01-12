@@ -27,6 +27,76 @@
     ]
   },
   {
+    "name": "Pulset Testnet",
+    "chain": "PUL",
+    "icon": "ethereum",
+    "rpc": ["https://testnet-rpc-dataseed1.pulsenet.io"],
+    "features": [{ "name": "EIP155" }, { "name": "EIP1559" }],
+    "faucets": [],
+    "nativeCurrency": { "name": "Pulset", "symbol": "PUL", "decimals": 18 },
+    "infoURL": "https://pulsescan-testnet-dev.netlify.app",
+    "shortName": "pul",
+    "chainId": 30393,
+    "networkId": 30393,
+    "slip44": 60,
+    "ens": { "registry": "0x00000000000C2E074eC69A0dFb2997BA6C7d2e1e" },
+    "explorers": [
+      {
+        "name": "pulsescan",
+        "url": "https://pulsescan-testnet-dev.netlify.app/",
+        "standard": "EIP3091"
+      }
+    ]
+  },
+  {
+    "name": "OPV Chain Testnet",
+    "chain": "OPV",
+    "icon": "ethereum",
+    "rpc": ["https://testnet-rpc-dataseed1.opvchain.com"],
+    "features": [{ "name": "EIP155" }, { "name": "EIP1559" }],
+    "faucets": [],
+    "nativeCurrency": { "name": "OPV Chain", "symbol": "OPV", "decimals": 18 },
+    "infoURL": "https://testnet-rpc-dataseed1.opvchain.com",
+    "shortName": "pul",
+    "chainId": 1680,
+    "networkId": 1680,
+    "slip44": 60,
+    "ens": { "registry": "0x00000000000C2E074eC69A0dFb2997BA6C7d2e1e" },
+    "explorers": [
+      {
+        "name": "pulsescan",
+        "url": "https://pulsescan-testnet-dev.netlify.app/",
+        "standard": "EIP3091"
+      }
+    ]
+  },
+  {
+    "name": "Pi Smart Chain Testnet",
+    "chain": "PI",
+    "icon": "ethereum",
+    "rpc": ["https://data-seed-pre-psc-1.pismartchain.network"],
+    "features": [{ "name": "EIP155" }, { "name": "EIP1559" }],
+    "faucets": [],
+    "nativeCurrency": {
+      "name": "Pi Smart Chain",
+      "symbol": "PI",
+      "decimals": 18
+    },
+    "infoURL": "https://data-seed-pre-psc-1.pismartchain.network",
+    "shortName": "pi",
+    "chainId": 3140,
+    "networkId": 3140,
+    "slip44": 60,
+    "ens": { "registry": "0x00000000000C2E074eC69A0dFb2997BA6C7d2e1e" },
+    "explorers": [
+      {
+        "name": "pulsescan",
+        "url": "https://pulsescan-testnet-dev.netlify.app/",
+        "standard": "EIP3091"
+      }
+    ]
+  },
+  {
     "name": "Expanse Network",
     "chain": "EXP",
     "rpc": ["https://node.expanse.tech"],

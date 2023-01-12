@@ -190,7 +190,8 @@ const sourcifyChains: SourcifyChainsObject = {
   "42220": {
     supported: true,
     monitored: false,
-    contractFetchAddress: "https://explorer.celo.org/mainnet/" + BLOCKSCOUT_SUFFIX,
+    contractFetchAddress:
+      "https://explorer.celo.org/mainnet/" + BLOCKSCOUT_SUFFIX,
     txRegex: getBlockscoutRegex("/mainnet"),
   },
   "44787": {
@@ -590,28 +591,56 @@ const sourcifyChains: SourcifyChainsObject = {
     // ZetaChain: Athens Testnet
     supported: true,
     monitored: false,
-    contractFetchAddress: "https://blockscout.athens2.zetachain.com/" + BLOCKSCOUT_SUFFIX,
+    contractFetchAddress:
+      "https://blockscout.athens2.zetachain.com/" + BLOCKSCOUT_SUFFIX,
     txRegex: getBlockscoutRegex(),
   },
   "42262": {
     // Oasis Emerald Mainnet
     supported: true,
     monitored: false,
-    contractFetchAddress: "https://explorer.emerald.oasis.dev/" + BLOCKSCOUT_SUFFIX,
+    contractFetchAddress:
+      "https://explorer.emerald.oasis.dev/" + BLOCKSCOUT_SUFFIX,
     txRegex: getBlockscoutRegex(),
   },
   "42261": {
     // Oasis Emerald Testnet
     supported: true,
     monitored: false,
-    contractFetchAddress: "https://testnet.explorer.emerald.oasis.dev/" + BLOCKSCOUT_SUFFIX,
+    contractFetchAddress:
+      "https://testnet.explorer.emerald.oasis.dev/" + BLOCKSCOUT_SUFFIX,
     txRegex: getBlockscoutRegex(),
   },
   "23295": {
     // Oasis Sapphire Testnet
     supported: true,
     monitored: false,
-    contractFetchAddress: "https://testnet.explorer.sapphire.oasis.dev/" + BLOCKSCOUT_SUFFIX,
+    contractFetchAddress:
+      "https://testnet.explorer.sapphire.oasis.dev/" + BLOCKSCOUT_SUFFIX,
+    txRegex: getBlockscoutRegex(),
+  },
+  "30393": {
+    // Pulset Testnet
+    supported: true,
+    monitored: false,
+    contractFetchAddress:
+      "https://pulsescan-testnet-dev.netlify.app/" + BLOCKSCOUT_SUFFIX,
+    txRegex: getBlockscoutRegex(),
+  },
+  "1680": {
+    // Pulset Testnet
+    supported: true,
+    monitored: false,
+    contractFetchAddress:
+      "https://pulsescan-testnet-dev.netlify.app/" + BLOCKSCOUT_SUFFIX,
+    txRegex: getBlockscoutRegex(),
+  },
+  "3140": {
+    // Pulset Testnet
+    supported: true,
+    monitored: false,
+    contractFetchAddress:
+      "https://pulsescan-testnet-dev.netlify.app/" + BLOCKSCOUT_SUFFIX,
     txRegex: getBlockscoutRegex(),
   },
 };
