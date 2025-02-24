@@ -1,27 +1,22 @@
-const {
-  WStorageIdentifiers,
-  RWStorageIdentifiers,
-} = require("../server/services/storageServices/identifiers");
+import { WStorageIdentifiers, RWStorageIdentifiers } from "../server/services/storageServices/identifiers";
 
-module.exports = {
-  repositoryV1: {
-    path: "/tmp/repositoryV1-test/",
-  },
-  repositoryV2: {
-    path: "/tmp/repositoryV2-test/",
-  },
-  session: {
-    storeType: "database",
-  },
-  storage: {
-    read: RWStorageIdentifiers.SourcifyDatabase,
-    writeOrWarn: [
-      RWStorageIdentifiers.RepositoryV1,
-      WStorageIdentifiers.S3Repository,
-    ],
-    writeOrErr: [
-      WStorageIdentifiers.RepositoryV2,
-      RWStorageIdentifiers.SourcifyDatabase,
-    ],
-  },
+export const repositoryV1 = {
+  path: "/tmp/repositoryV1-test/",
+};
+export const repositoryV2 = {
+  path: "/tmp/repositoryV2-test/",
+};
+export const session = {
+  storeType: "database",
+};
+export const storage = {
+  read: RWStorageIdentifiers.SourcifyDatabase,
+  writeOrWarn: [
+    RWStorageIdentifiers.RepositoryV1,
+    WStorageIdentifiers.S3Repository,
+  ],
+  writeOrErr: [
+    WStorageIdentifiers.RepositoryV2,
+    RWStorageIdentifiers.SourcifyDatabase,
+  ],
 };

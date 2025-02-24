@@ -44,30 +44,30 @@ else {
 const allChains = chainsRaw as Chain[];
 
 export const LOCAL_CHAINS: SourcifyChain[] = [
-  new SourcifyChain({
-    name: "Ganache Localhost",
-    shortName: "Ganache",
-    chainId: 1337,
-    faucets: [],
-    infoURL: "localhost",
-    nativeCurrency: { name: "localETH", symbol: "localETH", decimals: 18 },
-    network: "testnet",
-    networkId: 1337,
-    rpc: [`http://localhost:8545`],
-    supported: true,
-  }),
-  new SourcifyChain({
-    name: "Hardhat Network Localhost",
-    shortName: "Hardhat Network",
-    chainId: 31337,
-    faucets: [],
-    infoURL: "localhost",
-    nativeCurrency: { name: "localETH", symbol: "localETH", decimals: 18 },
-    network: "testnet",
-    networkId: 31337,
-    rpc: [`http://localhost:8545`],
-    supported: true,
-  }),
+  // new SourcifyChain({
+  //   name: "Ganache Localhost",
+  //   shortName: "Ganache",
+  //   chainId: 1337,
+  //   faucets: [],
+  //   infoURL: "localhost",
+  //   nativeCurrency: { name: "localETH", symbol: "localETH", decimals: 18 },
+  //   network: "testnet",
+  //   networkId: 1337,
+  //   rpc: [`http://localhost:8545`],
+  //   supported: true,
+  // }),
+  // new SourcifyChain({
+  //   name: "Hardhat Network Localhost",
+  //   shortName: "Hardhat Network",
+  //   chainId: 31337,
+  //   faucets: [],
+  //   infoURL: "localhost",
+  //   nativeCurrency: { name: "localETH", symbol: "localETH", decimals: 18 },
+  //   network: "testnet",
+  //   networkId: 31337,
+  //   rpc: [`http://localhost:8545`],
+  //   supported: true,
+  // }),
 ];
 
 /**
@@ -81,6 +81,7 @@ function buildCustomRpcs(
   const rpc: (string | FetchRequest)[] = [];
   const rpcWithoutApiKeys: string[] = [];
   sourcifyRpcs.forEach((sourcifyRpc, index) => {
+    console.log(sourcifyRpc)
     // simple url, can't have traceSupport
     if (typeof sourcifyRpc === "string") {
       rpc.push(sourcifyRpc);
