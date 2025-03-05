@@ -15,7 +15,7 @@
     "sourcifyName": "Binace Smart Chain Testnet",
     "supported": true,
 
-    "rpc": ["wss://bsc-testnet-rpc.publicnode.com"]
+    "rpc": ["https://bsc-testnet.public.blastapi.io"]
   },
   "56": {
     "sourcifyName": "Binace Smart Chain Mainnet",
@@ -34,5 +34,11 @@
     "supported": true,
 
     "rpc": ["https://public.0xrpc.com/789789"]
+  },
+  "4555": {
+    "sourcifyName": "Nuke Chain ",
+    "supported": true,
+
+    "rpc": ["https://testnet-rpc.nukechain.org"]
   }
 }
